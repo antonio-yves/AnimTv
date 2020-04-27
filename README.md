@@ -34,7 +34,7 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [React](https://reactjs.org)
+- [React JS](https://reactjs.org)
 
 ## 💻 Projeto
 
