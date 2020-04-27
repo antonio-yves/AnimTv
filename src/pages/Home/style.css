@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.navigation-bar {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title h1 {
+  height: 43px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 43px;
+  text-align: center;
+  color: #1E234B;
+}
+
+.time h1 {
+  height: 43px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 43px;
+  text-align: center;
+  color: #1E234B;
+}
+
+.date span {
+  display: table-row;
+  font-size: 12px;
+  color: #1E234B;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigation ul li {
+  float: left;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu-link {
+  color: #A5A3B6;
+  text-decoration: none;
+}
+
+.active {
+  color: #1E234B;
+}
+
+.search {
+  padding: 5px 10px;
+  border-bottom: solid 1px #1E234B;
+  border-radius: 5%;
+}
+
+.search input {
+  border: none;
+}
+
+.destaque {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #FFF;
+}
+
+.background {
+  background: linear-gradient(270deg, #00CCFF 0%, #00ACFF 100%);
+}
+
+.info .title h1 {
+  color: #FFF;
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 58px;
+  font-family: Abel;
+}
+
+.info .informacoes {
+  margin-bottom: 30px;
+}
+
+.info .informacoes span {
+  font-size: 17px;
+  padding: 0 20px 0 0;
+  font-family: Abel;
+}
+
+.info .sinopse {
+  width: 270px;
+  margin-bottom: 30px;
+}
+
+.info .sinopse p {
+  font-size: 17px;
+  font-family: Abel;
+  line-height: 29px;
+}
+
+.info .release {
+  margin-bottom: 30px;
+}
+
+.info .release span {
+  font-size: 17px;
+  font-family: Abel;
+}
+
+.info .watch button {
+  width: 209px;
+  height: 58px;
+  border: none;
+  border-radius: 30px;
+  align-items: center;
+  font-size: 17px;
+  font-family: Abel;
+  background-color: #FFF;
+  color: #1E234B;
+}
+
+.recomended {
+  margin-top: 30px;
+}
+
+.recomended .page-items {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.recomended .page-items .title h1 {
+  font-size: 29px;
+}
+
+.recomended .page-items .navigation {
+  padding: 10px;
+}
+
+.recomended .page-items .navigation svg {
+  margin: 0 0 0 20px;
+}
+
+.recomended .movies-list {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.recomended .movies-list ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.recomended .movies-list ul li {
+  float: left;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.recomended .movies-list ul li img {
+  height: 350px;
+}
+
+/* Float Shadow */
+.hvr-float-shadow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-float-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+  /* move the element up by 5px */
+}
+.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+.more-movies .title {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.more-movies .title h1 {
+  text-align: left;
+  font-size: 28px;
+}
+
+.more-movies .options {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.more-movies .options ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.more-movies .options ul li {
+  float: left;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.more-movies .list {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.more-movies .list .movie {
+  display: flex;
+  margin-bottom: 30px;
+  max-height: 274px;
+}
+
+.more-movies .list .movie .image img {
+  width: 483.72px;
+  margin-right: 50px;
+}
+
+.more-movies .list .movie .title h1{
+  color: #1E234B;
+  font-size: 29px;
+}
+
+.more-movies .list .movie .sinopse p {
+  color: #2A2A2A;
+  opacity: 0.8;
+  width: 415px;
+}
+
+.more-movies .list .movie .watch-list {
+  margin-top: 30px;
+}
+
+.more-movies .list .movie .watch-list a {
+  font-family: Abel;
+  font-size: 17px;
+  color: #2A2A2A;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.more-movies .list .movie .watch-list a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  text-align: center;
+  background: #1E234B;
+  color: #FFF;
+  padding: 20px;
+}
